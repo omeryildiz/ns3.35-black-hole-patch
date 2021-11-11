@@ -1,16 +1,16 @@
-# project ns (3.35) configured on Mon Nov  8 14:44:22 2021 by
+# project ns (3.35) configured on Tue Nov  9 21:01:33 2021 by
 # waf 2.0.21 (abi 20, python 3080af0 on linux)
-# using /home/omer/dr/app/source/ns-3.35/waf configure --prefix=/home/omer/dr/app/build --enable-examples --enable-tests
+# using ./waf configure
 #
 ----------------------------------------
 Setting top to
-/home/omer/dr/app/source/ns-3.35
+/home/omer/dr/app/source/ns-3.35-with-blackhole
 ----------------------------------------
 Setting out to
-/home/omer/dr/app/source/ns-3.35/build
+/home/omer/dr/app/source/ns-3.35-with-blackhole/build
 ----------------------------------------
 Checking for 'gcc' (C compiler)
-find program=['gcc', 'cc'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/home/omer/Cypress/arm-2013.11/bin', '/home/omer/dr/app/bake', '/home/omer/dr/app/build/bin'] var='CC' -> ['/usr/bin/gcc']
+find program=['gcc', 'cc'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/home/omer/dr/app/bake', '/home/omer/Cypress/arm-2013.11/bin'] var='CC' -> ['/usr/bin/gcc']
 ['/usr/bin/gcc', '-dM', '-E', '-']
 out: #define __SSP_STRONG__ 3
 #define __DBL_MIN_EXP__ (-1021)
@@ -361,14 +361,14 @@ out: #define __SSP_STRONG__ 3
 #define __ATOMIC_ACQ_REL 4
 #define __ATOMIC_RELEASE 3
 
-find program=['ar'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/home/omer/Cypress/arm-2013.11/bin', '/home/omer/dr/app/bake', '/home/omer/dr/app/build/bin'] var='AR' -> ['/usr/bin/ar']
+find program=['ar'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/home/omer/dr/app/bake', '/home/omer/Cypress/arm-2013.11/bin'] var='AR' -> ['/usr/bin/ar']
 /usr/bin/gcc
 ----------------------------------------
 Checking for cc version
 9.3.0
 ----------------------------------------
 Checking for 'g++' (C++ compiler)
-find program=['g++', 'c++'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/home/omer/Cypress/arm-2013.11/bin', '/home/omer/dr/app/bake', '/home/omer/dr/app/build/bin'] var='CXX' -> ['/usr/bin/g++']
+find program=['g++', 'c++'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/home/omer/dr/app/bake', '/home/omer/Cypress/arm-2013.11/bin'] var='CXX' -> ['/usr/bin/g++']
 ['/usr/bin/g++', '-dM', '-E', '-']
 out: #define __SSP_STRONG__ 3
 #define __DBL_MIN_EXP__ (-1021)
@@ -719,25 +719,25 @@ out: #define __SSP_STRONG__ 3
 #define __ATOMIC_ACQ_REL 4
 #define __ATOMIC_RELEASE 3
 
-find program=['ar'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/home/omer/Cypress/arm-2013.11/bin', '/home/omer/dr/app/bake', '/home/omer/dr/app/build/bin'] var='AR' -> ['/usr/bin/ar']
+find program=['ar'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/home/omer/dr/app/bake', '/home/omer/Cypress/arm-2013.11/bin'] var='AR' -> ['/usr/bin/ar']
 /usr/bin/g++
 ------------------------------------------------------
 Checking for compilation flag -Wl,--soname=foo support
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling build/.conf_check_040c0dd0eda912b8b29d7d1ce92ad6d6/test.cpp
+[1/1] Compiling [32mbuild/.conf_check_040c0dd0eda912b8b29d7d1ce92ad6d6/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-Wl,--soname=foo', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_040c0dd0eda912b8b29d7d1ce92ad6d6/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-Wl,--soname=foo', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_040c0dd0eda912b8b29d7d1ce92ad6d6/testbuild/test.cpp.1.o']
 ok
 ------------------------------------------------------
 Checking for compilation flag -std=c++17 support
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling build/.conf_check_040c0dd0eda912b8b29d7d1ce92ad6d6/test.cpp
+[1/1] Compiling [32mbuild/.conf_check_040c0dd0eda912b8b29d7d1ce92ad6d6/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-std=c++17', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_040c0dd0eda912b8b29d7d1ce92ad6d6/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-std=c++17', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_040c0dd0eda912b8b29d7d1ce92ad6d6/testbuild/test.cpp.1.o']
 ok
 boost: loading conf
 boost: scanning for required libs
@@ -751,7 +751,7 @@ boost: checking which libs are present
 ------------------------------------------------------
 Checking for program 'python'
 /usr/bin/python3
-find program=['python'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/home/omer/Cypress/arm-2013.11/bin', '/home/omer/dr/app/bake', '/home/omer/dr/app/build/bin'] var='PYTHON' -> ['/usr/bin/python3']
+find program=['python'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/home/omer/dr/app/bake', '/home/omer/Cypress/arm-2013.11/bin'] var='PYTHON' -> ['/usr/bin/python3']
 ['/usr/bin/python3', '-c', 'import sys\ntry:\n print(sys.implementation.cache_tag)\nexcept AttributeError:\n import imp\n print(imp.get_tag())\n']
 out: cpython-38
 
@@ -762,15 +762,15 @@ out: 3
 final
 0
 
-['/usr/bin/python3', '-c', "from distutils.sysconfig import get_config_var, get_python_lib\n\nprint(repr(get_python_lib(standard_lib=0, prefix='/home/omer/dr/app/build') or ''))"]
-out: '/home/omer/dr/app/build/lib/python3.8/site-packages'
+['/usr/bin/python3', '-c', "from distutils.sysconfig import get_config_var, get_python_lib\n\nprint(repr(get_python_lib(standard_lib=0, prefix='/usr/local') or ''))"]
+out: '/usr/local/lib/python3/dist-packages'
 
-'/home/omer/dr/app/build/lib/python3.8/site-packages'
+'/usr/local/lib/python3/dist-packages'
 
-['/usr/bin/python3', '-c', "from distutils.sysconfig import get_config_var, get_python_lib\n\nprint(repr(get_python_lib(plat_specific=1, standard_lib=0, prefix='/home/omer/dr/app/build') or ''))"]
-out: '/home/omer/dr/app/build/lib/python3.8/site-packages'
+['/usr/bin/python3', '-c', "from distutils.sysconfig import get_config_var, get_python_lib\n\nprint(repr(get_python_lib(plat_specific=1, standard_lib=0, prefix='/usr/local') or ''))"]
+out: '/usr/local/lib/python3/dist-packages'
 
-'/home/omer/dr/app/build/lib/python3.8/site-packages'
+'/usr/local/lib/python3/dist-packages'
 
 ------------------------------------------------------
 Checking for python version >= 2.3
@@ -818,7 +818,7 @@ LDVERSION = '3.8'
 ------------------------------------------------------
 python-config
 /usr/bin/python3-config
-find program=['/usr/bin/python3-config', 'python3.8-config', 'python-config-3.8', 'python3.8m-config'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/home/omer/Cypress/arm-2013.11/bin', '/home/omer/dr/app/bake', '/home/omer/dr/app/build/bin'] var='PYTHON_CONFIG' -> ['/usr/bin/python3-config']
+find program=['/usr/bin/python3-config', 'python3.8-config', 'python-config-3.8', 'python3.8m-config'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/home/omer/dr/app/bake', '/home/omer/Cypress/arm-2013.11/bin'] var='PYTHON_CONFIG' -> ['/usr/bin/python3-config']
 --------------------------------------------------------------------------
 Asking python-config for pyembed '--cflags --libs --ldflags --embed' flags
 ['/usr/bin/python3-config', '--cflags', '--libs', '--ldflags', '--embed']
@@ -855,12 +855,12 @@ int main(int argc, char **argv)
 }
 
 <==
-[1/2] Compiling build/.conf_check_b367436918f7cae05acae23362c521b8/test.cpp
+[1/2] Compiling [32mbuild/.conf_check_b367436918f7cae05acae23362c521b8/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-g', '-fdebug-prefix-map=/build/python3.8-YxOiQL/python3.8-3.8.10=.', '-fstack-protector', '-g', '-fwrapv', '-O3', '-I/usr/include/python3.8', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/home/omer/dr/app/build/lib/python3.8/site-packages"', '-DPYTHONARCHDIR="/home/omer/dr/app/build/lib/python3.8/site-packages"', '-DNDEBUG', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_b367436918f7cae05acae23362c521b8/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
-[2/2] Linking build/.conf_check_b367436918f7cae05acae23362c521b8/testbuild/testprog
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-g', '-fdebug-prefix-map=/build/python3.8-YxOiQL/python3.8-3.8.10=.', '-fstack-protector', '-g', '-fwrapv', '-O3', '-I/usr/include/python3.8', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python3/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python3/dist-packages"', '-DNDEBUG', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_b367436918f7cae05acae23362c521b8/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
+[2/2] Linking [33mbuild/.conf_check_b367436918f7cae05acae23362c521b8/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_b367436918f7cae05acae23362c521b8/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-L/usr/lib/python3.8/config-3.8-x86_64-linux-gnu', '-L/usr/lib', '-lpython3.8', '-lcrypt', '-lpthread', '-ldl', '-lutil', '-lm', '-lm', '-lpython3.8', '-lcrypt', '-lpthread', '-ldl', '-lutil', '-lm', '-lm']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_b367436918f7cae05acae23362c521b8/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-L/usr/lib/python3.8/config-3.8-x86_64-linux-gnu', '-L/usr/lib', '-lpython3.8', '-lcrypt', '-lpthread', '-ldl', '-lutil', '-lm', '-lm', '-lpython3.8', '-lcrypt', '-lpthread', '-ldl', '-lutil', '-lm', '-lm']
 yes
 --------------------------------------------------------------------------
 Asking python-config for pyext '--cflags --libs --ldflags' flags
@@ -898,30 +898,30 @@ int main(int argc, char **argv)
 }
 
 <==
-[1/2] Compiling build/.conf_check_66b724fcf417dea0fd77d12e509b70c6/test.cpp
+[1/2] Compiling [32mbuild/.conf_check_66b724fcf417dea0fd77d12e509b70c6/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-fPIC', '-g', '-fdebug-prefix-map=/build/python3.8-YxOiQL/python3.8-3.8.10=.', '-fstack-protector', '-g', '-fwrapv', '-O3', '-I/usr/include/python3.8', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/home/omer/dr/app/build/lib/python3.8/site-packages"', '-DPYTHONARCHDIR="/home/omer/dr/app/build/lib/python3.8/site-packages"', '-DHAVE_PYEMBED=1', '-DNDEBUG', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_66b724fcf417dea0fd77d12e509b70c6/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
-[2/2] Linking build/.conf_check_66b724fcf417dea0fd77d12e509b70c6/testbuild/testprog.cpython-38-x86_64-linux-gnu.so
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-fPIC', '-g', '-fdebug-prefix-map=/build/python3.8-YxOiQL/python3.8-3.8.10=.', '-fstack-protector', '-g', '-fwrapv', '-O3', '-I/usr/include/python3.8', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python3/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python3/dist-packages"', '-DHAVE_PYEMBED=1', '-DNDEBUG', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_66b724fcf417dea0fd77d12e509b70c6/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
+[2/2] Linking [33mbuild/.conf_check_66b724fcf417dea0fd77d12e509b70c6/testbuild/testprog.cpython-38-x86_64-linux-gnu.so[0m
 
-['/usr/bin/g++', '-shared', 'test.cpp.1.o', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_66b724fcf417dea0fd77d12e509b70c6/testbuild/testprog.cpython-38-x86_64-linux-gnu.so', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-L/usr/lib/python3.8/config-3.8-x86_64-linux-gnu', '-L/usr/lib', '-lcrypt', '-lpthread', '-ldl', '-lutil', '-lm', '-lm', '-lcrypt', '-lpthread', '-ldl', '-lutil', '-lm', '-lm']
+['/usr/bin/g++', '-shared', 'test.cpp.1.o', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_66b724fcf417dea0fd77d12e509b70c6/testbuild/testprog.cpython-38-x86_64-linux-gnu.so', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-L/usr/lib/python3.8/config-3.8-x86_64-linux-gnu', '-L/usr/lib', '-lcrypt', '-lpthread', '-ldl', '-lutil', '-lm', '-lm', '-lcrypt', '-lpthread', '-ldl', '-lutil', '-lm', '-lm']
 yes
 --------------------------------------------------------------------------
 Checking for compilation flag -fvisibility=hidden support
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling build/.conf_check_040c0dd0eda912b8b29d7d1ce92ad6d6/test.cpp
+[1/1] Compiling [32mbuild/.conf_check_040c0dd0eda912b8b29d7d1ce92ad6d6/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-fvisibility=hidden', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/home/omer/dr/app/build/lib/python3.8/site-packages"', '-DPYTHONARCHDIR="/home/omer/dr/app/build/lib/python3.8/site-packages"', '-DHAVE_PYEMBED=1', '-DHAVE_PYEXT=1', '-DHAVE_PYTHON_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_040c0dd0eda912b8b29d7d1ce92ad6d6/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-fvisibility=hidden', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python3/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python3/dist-packages"', '-DHAVE_PYEMBED=1', '-DHAVE_PYEXT=1', '-DHAVE_PYTHON_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_040c0dd0eda912b8b29d7d1ce92ad6d6/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
 ok
 --------------------------------------------------------------------------
 Checking for compilation flag -Wno-array-bounds support
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling build/.conf_check_040c0dd0eda912b8b29d7d1ce92ad6d6/test.cpp
+[1/1] Compiling [32mbuild/.conf_check_040c0dd0eda912b8b29d7d1ce92ad6d6/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-array-bounds', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/home/omer/dr/app/build/lib/python3.8/site-packages"', '-DPYTHONARCHDIR="/home/omer/dr/app/build/lib/python3.8/site-packages"', '-DHAVE_PYEMBED=1', '-DHAVE_PYEXT=1', '-DHAVE_PYTHON_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_040c0dd0eda912b8b29d7d1ce92ad6d6/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-array-bounds', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python3/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python3/dist-packages"', '-DHAVE_PYEMBED=1', '-DHAVE_PYEXT=1', '-DHAVE_PYTHON_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_040c0dd0eda912b8b29d7d1ce92ad6d6/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
 ok
 --------------------------------------------------------------------------
 Checking for pybindgen location
@@ -949,9 +949,9 @@ int main ()
 }
 
 <==
-[1/1] Compiling build/.conf_check_3c4794929f224d1606d19026cf2e743a/test.cpp
+[1/1] Compiling [32mbuild/.conf_check_3c4794929f224d1606d19026cf2e743a/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/home/omer/dr/app/build/lib/python3.8/site-packages"', '-DPYTHONARCHDIR="/home/omer/dr/app/build/lib/python3.8/site-packages"', '-DHAVE_PYEMBED=1', '-DHAVE_PYEXT=1', '-DHAVE_PYTHON_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_3c4794929f224d1606d19026cf2e743a/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python3/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python3/dist-packages"', '-DHAVE_PYEMBED=1', '-DHAVE_PYEXT=1', '-DHAVE_PYTHON_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_3c4794929f224d1606d19026cf2e743a/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
 yes
 --------------------------------------------------------------------------
 Checking for types uint64_t and unsigned long equivalence
@@ -970,24 +970,24 @@ int main ()
 }
 
 <==
-[1/1] Compiling build/.conf_check_2dd1ea5fd6e3e98f803617848594785d/test.cpp
+[1/1] Compiling [32mbuild/.conf_check_2dd1ea5fd6e3e98f803617848594785d/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/home/omer/dr/app/build/lib/python3.8/site-packages"', '-DPYTHONARCHDIR="/home/omer/dr/app/build/lib/python3.8/site-packages"', '-DHAVE_PYEMBED=1', '-DHAVE_PYEXT=1', '-DHAVE_PYTHON_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_2dd1ea5fd6e3e98f803617848594785d/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python3/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python3/dist-packages"', '-DHAVE_PYEMBED=1', '-DHAVE_PYEXT=1', '-DHAVE_PYTHON_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_2dd1ea5fd6e3e98f803617848594785d/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
 err: ../test.cpp: In function ‘int main()’:
 ../test.cpp:7:37: error: conversion from ‘vector<long long unsigned int>’ to non-scalar type ‘vector<long unsigned int>’ requested
     7 |    std::vector< uint64_t > t = std::vector< unsigned long long > ();
       |                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-from /home/omer/dr/app/source/ns-3.35/bindings/python: Test does not build: Traceback (most recent call last):
-  File "/home/omer/dr/app/source/ns-3.35/.waf3-2.0.21-c6c9a875365426e5928462b9b74d40b5/waflib/Configure.py", line 335, in run_build
+from /home/omer/dr/app/source/ns-3.35-with-blackhole/bindings/python: Test does not build: Traceback (most recent call last):
+  File "/home/omer/dr/app/source/ns-3.35-with-blackhole/.waf3-2.0.21-c6c9a875365426e5928462b9b74d40b5/waflib/Configure.py", line 335, in run_build
     bld.compile()
-  File "/home/omer/dr/app/source/ns-3.35/.waf3-2.0.21-c6c9a875365426e5928462b9b74d40b5/waflib/Build.py", line 176, in compile
+  File "/home/omer/dr/app/source/ns-3.35-with-blackhole/.waf3-2.0.21-c6c9a875365426e5928462b9b74d40b5/waflib/Build.py", line 176, in compile
     raise Errors.BuildError(self.producer.error)
 waflib.Errors.BuildError: Build failed
  -> task in 'testprog' failed with exit status 1 (run with -v to display more information)
 
 no
-from /home/omer/dr/app/source/ns-3.35/bindings/python: The configuration failed
+from /home/omer/dr/app/source/ns-3.35-with-blackhole/bindings/python: The configuration failed
 --------------------------------------------------------------------------
 Checking for types uint64_t and unsigned long long equivalence
 yes
@@ -1006,12 +1006,12 @@ int main ()
 }
 
 <==
-[1/2] Compiling build/.conf_check_5af17e5884d0f64b2a76385c930904ab/test.cpp
+[1/2] Compiling [32mbuild/.conf_check_5af17e5884d0f64b2a76385c930904ab/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/home/omer/dr/app/build/lib/python3.8/site-packages"', '-DPYTHONARCHDIR="/home/omer/dr/app/build/lib/python3.8/site-packages"', '-DHAVE_PYEMBED=1', '-DHAVE_PYEXT=1', '-DHAVE_PYTHON_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_5af17e5884d0f64b2a76385c930904ab/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
-[2/2] Linking build/.conf_check_5af17e5884d0f64b2a76385c930904ab/testbuild/testprog
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python3/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python3/dist-packages"', '-DHAVE_PYEMBED=1', '-DHAVE_PYEXT=1', '-DHAVE_PYTHON_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_5af17e5884d0f64b2a76385c930904ab/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
+[2/2] Linking [33mbuild/.conf_check_5af17e5884d0f64b2a76385c930904ab/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_5af17e5884d0f64b2a76385c930904ab/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_5af17e5884d0f64b2a76385c930904ab/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 complete
 --------------------------------------------------------------------------
 Checking for python module 'pygccxml'
@@ -1021,14 +1021,14 @@ err: Traceback (most recent call last):
 ModuleNotFoundError: No module named 'pygccxml'
 
 not found
-from /home/omer/dr/app/source/ns-3.35/bindings/python: Could not find the python module 'pygccxml'
+from /home/omer/dr/app/source/ns-3.35-with-blackhole/bindings/python: Could not find the python module 'pygccxml'
 --------------------------------------------------------------------------
 Checking for click location
 not found
 --------------------------------------------------------------------------
 Checking for program 'pkg-config'
 /usr/bin/pkg-config
-find program=['pkg-config'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/home/omer/Cypress/arm-2013.11/bin', '/home/omer/dr/app/bake', '/home/omer/dr/app/build/bin'] var='PKGCONFIG' -> ['/usr/bin/pkg-config']
+find program=['pkg-config'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/home/omer/dr/app/bake', '/home/omer/Cypress/arm-2013.11/bin'] var='PKGCONFIG' -> ['/usr/bin/pkg-config']
 --------------------------------------------------------------------------
 Checking for 'gtk+-3.0 >= 3.22'
 ['/usr/bin/pkg-config', '--cflags', '--libs', 'gtk+-3.0', '>=', '3.22']
@@ -1057,9 +1057,9 @@ checking for uint128_t
         }
         
 <==
-[1/2] Compiling build/.conf_check_2f39551c44a4e78a2e4469b1bac2d149/test.cpp
+[1/2] Compiling [32mbuild/.conf_check_2f39551c44a4e78a2e4469b1bac2d149/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_2f39551c44a4e78a2e4469b1bac2d149/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_2f39551c44a4e78a2e4469b1bac2d149/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
 err: ../test.cpp: In function ‘int main(int, char**)’:
 ../test.cpp:6:7: error: ‘uint128_t’ was not declared in this scope; did you mean ‘uint32_t’?
     6 |  if ((uint128_t *) 0) return 0;
@@ -1077,16 +1077,16 @@ err: ../test.cpp: In function ‘int main(int, char**)’:
       |              ^~~~~~~~~
       |              uint32_t
 
-from /home/omer/dr/app/source/ns-3.35/src/core: Test does not build: Traceback (most recent call last):
-  File "/home/omer/dr/app/source/ns-3.35/.waf3-2.0.21-c6c9a875365426e5928462b9b74d40b5/waflib/Configure.py", line 335, in run_build
+from /home/omer/dr/app/source/ns-3.35-with-blackhole/src/core: Test does not build: Traceback (most recent call last):
+  File "/home/omer/dr/app/source/ns-3.35-with-blackhole/.waf3-2.0.21-c6c9a875365426e5928462b9b74d40b5/waflib/Configure.py", line 335, in run_build
     bld.compile()
-  File "/home/omer/dr/app/source/ns-3.35/.waf3-2.0.21-c6c9a875365426e5928462b9b74d40b5/waflib/Build.py", line 176, in compile
+  File "/home/omer/dr/app/source/ns-3.35-with-blackhole/.waf3-2.0.21-c6c9a875365426e5928462b9b74d40b5/waflib/Build.py", line 176, in compile
     raise Errors.BuildError(self.producer.error)
 waflib.Errors.BuildError: Build failed
  -> task in 'testprog' failed with exit status 1 (run with -v to display more information)
 
 not found
-from /home/omer/dr/app/source/ns-3.35/src/core: The configuration failed
+from /home/omer/dr/app/source/ns-3.35-with-blackhole/src/core: The configuration failed
 --------------------------------------------------------------------------
 checking for __uint128_t
 ==>
@@ -1101,12 +1101,12 @@ checking for __uint128_t
         }
         
 <==
-[1/2] Compiling build/.conf_check_9858f12ee3e8fd10ddbed7322e7f6d39/test.cpp
+[1/2] Compiling [32mbuild/.conf_check_9858f12ee3e8fd10ddbed7322e7f6d39/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_9858f12ee3e8fd10ddbed7322e7f6d39/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
-[2/2] Linking build/.conf_check_9858f12ee3e8fd10ddbed7322e7f6d39/testbuild/testprog
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_9858f12ee3e8fd10ddbed7322e7f6d39/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
+[2/2] Linking [33mbuild/.conf_check_9858f12ee3e8fd10ddbed7322e7f6d39/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_9858f12ee3e8fd10ddbed7322e7f6d39/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_9858f12ee3e8fd10ddbed7322e7f6d39/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 --------------------------------------------------------------------------
 Checking high precision implementation
@@ -1122,12 +1122,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling build/.conf_check_78f27eb1cb7d718aa77ac6221c1170cb/test.cpp
+[1/2] Compiling [32mbuild/.conf_check_78f27eb1cb7d718aa77ac6221c1170cb/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_78f27eb1cb7d718aa77ac6221c1170cb/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
-[2/2] Linking build/.conf_check_78f27eb1cb7d718aa77ac6221c1170cb/testbuild/testprog
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_78f27eb1cb7d718aa77ac6221c1170cb/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
+[2/2] Linking [33mbuild/.conf_check_78f27eb1cb7d718aa77ac6221c1170cb/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_78f27eb1cb7d718aa77ac6221c1170cb/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_78f27eb1cb7d718aa77ac6221c1170cb/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 --------------------------------------------------------------------------
 Checking for header inttypes.h
@@ -1140,12 +1140,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling build/.conf_check_fc28ad0b265dbc0ea499b0019a3e29a9/test.cpp
+[1/2] Compiling [32mbuild/.conf_check_fc28ad0b265dbc0ea499b0019a3e29a9/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_fc28ad0b265dbc0ea499b0019a3e29a9/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
-[2/2] Linking build/.conf_check_fc28ad0b265dbc0ea499b0019a3e29a9/testbuild/testprog
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_fc28ad0b265dbc0ea499b0019a3e29a9/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
+[2/2] Linking [33mbuild/.conf_check_fc28ad0b265dbc0ea499b0019a3e29a9/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_fc28ad0b265dbc0ea499b0019a3e29a9/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_fc28ad0b265dbc0ea499b0019a3e29a9/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 --------------------------------------------------------------------------
 Checking for header sys/inttypes.h
@@ -1158,24 +1158,24 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling build/.conf_check_be8f82a542d6af9f438e0ae24dca5ce1/test.cpp
+[1/2] Compiling [32mbuild/.conf_check_be8f82a542d6af9f438e0ae24dca5ce1/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_be8f82a542d6af9f438e0ae24dca5ce1/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_be8f82a542d6af9f438e0ae24dca5ce1/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
 err: ../test.cpp:1:10: fatal error: sys/inttypes.h: No such file or directory
     1 | #include <sys/inttypes.h>
       |          ^~~~~~~~~~~~~~~~
 compilation terminated.
 
-from /home/omer/dr/app/source/ns-3.35/src/core: Test does not build: Traceback (most recent call last):
-  File "/home/omer/dr/app/source/ns-3.35/.waf3-2.0.21-c6c9a875365426e5928462b9b74d40b5/waflib/Configure.py", line 335, in run_build
+from /home/omer/dr/app/source/ns-3.35-with-blackhole/src/core: Test does not build: Traceback (most recent call last):
+  File "/home/omer/dr/app/source/ns-3.35-with-blackhole/.waf3-2.0.21-c6c9a875365426e5928462b9b74d40b5/waflib/Configure.py", line 335, in run_build
     bld.compile()
-  File "/home/omer/dr/app/source/ns-3.35/.waf3-2.0.21-c6c9a875365426e5928462b9b74d40b5/waflib/Build.py", line 176, in compile
+  File "/home/omer/dr/app/source/ns-3.35-with-blackhole/.waf3-2.0.21-c6c9a875365426e5928462b9b74d40b5/waflib/Build.py", line 176, in compile
     raise Errors.BuildError(self.producer.error)
 waflib.Errors.BuildError: Build failed
  -> task in 'testprog' failed with exit status 1 (run with -v to display more information)
 
 not found
-from /home/omer/dr/app/source/ns-3.35/src/core: The configuration failed
+from /home/omer/dr/app/source/ns-3.35-with-blackhole/src/core: The configuration failed
 --------------------------------------------------------------------------
 Checking for header sys/types.h
 ==>
@@ -1187,12 +1187,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling build/.conf_check_8921d893cae40686018a1a0f274b919a/test.cpp
+[1/2] Compiling [32mbuild/.conf_check_8921d893cae40686018a1a0f274b919a/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_8921d893cae40686018a1a0f274b919a/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
-[2/2] Linking build/.conf_check_8921d893cae40686018a1a0f274b919a/testbuild/testprog
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_8921d893cae40686018a1a0f274b919a/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
+[2/2] Linking [33mbuild/.conf_check_8921d893cae40686018a1a0f274b919a/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_8921d893cae40686018a1a0f274b919a/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_8921d893cae40686018a1a0f274b919a/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 --------------------------------------------------------------------------
 Checking for header sys/stat.h
@@ -1205,12 +1205,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling build/.conf_check_35c3b87a09b47b232105a7d7cd0283a2/test.cpp
+[1/2] Compiling [32mbuild/.conf_check_35c3b87a09b47b232105a7d7cd0283a2/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_35c3b87a09b47b232105a7d7cd0283a2/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
-[2/2] Linking build/.conf_check_35c3b87a09b47b232105a7d7cd0283a2/testbuild/testprog
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_35c3b87a09b47b232105a7d7cd0283a2/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
+[2/2] Linking [33mbuild/.conf_check_35c3b87a09b47b232105a7d7cd0283a2/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_35c3b87a09b47b232105a7d7cd0283a2/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_35c3b87a09b47b232105a7d7cd0283a2/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 --------------------------------------------------------------------------
 Checking for header dirent.h
@@ -1223,12 +1223,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling build/.conf_check_42a2d945c05247460c5b0f87cb6870b7/test.cpp
+[1/2] Compiling [32mbuild/.conf_check_42a2d945c05247460c5b0f87cb6870b7/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_42a2d945c05247460c5b0f87cb6870b7/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
-[2/2] Linking build/.conf_check_42a2d945c05247460c5b0f87cb6870b7/testbuild/testprog
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_42a2d945c05247460c5b0f87cb6870b7/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
+[2/2] Linking [33mbuild/.conf_check_42a2d945c05247460c5b0f87cb6870b7/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_42a2d945c05247460c5b0f87cb6870b7/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_42a2d945c05247460c5b0f87cb6870b7/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 --------------------------------------------------------------------------
 Checking for header signal.h
@@ -1241,12 +1241,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling build/.conf_check_4ecf044f3ad7de926ece45637d37a7c2/test.cpp
+[1/2] Compiling [32mbuild/.conf_check_4ecf044f3ad7de926ece45637d37a7c2/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_4ecf044f3ad7de926ece45637d37a7c2/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
-[2/2] Linking build/.conf_check_4ecf044f3ad7de926ece45637d37a7c2/testbuild/testprog
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_4ecf044f3ad7de926ece45637d37a7c2/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
+[2/2] Linking [33mbuild/.conf_check_4ecf044f3ad7de926ece45637d37a7c2/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_4ecf044f3ad7de926ece45637d37a7c2/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_4ecf044f3ad7de926ece45637d37a7c2/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 --------------------------------------------------------------------------
 Checking for header pthread.h
@@ -1261,12 +1261,12 @@ int main ()
 }
 
 <==
-[1/2] Compiling build/.conf_check_540e61053391cd4cb697e5746d5ea1e2/test.cpp
+[1/2] Compiling [32mbuild/.conf_check_540e61053391cd4cb697e5746d5ea1e2/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-pthread', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_SIGNAL_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_540e61053391cd4cb697e5746d5ea1e2/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
-[2/2] Linking build/.conf_check_540e61053391cd4cb697e5746d5ea1e2/testbuild/testprog
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-pthread', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_SIGNAL_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_540e61053391cd4cb697e5746d5ea1e2/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
+[2/2] Linking [33mbuild/.conf_check_540e61053391cd4cb697e5746d5ea1e2/testbuild/testprog[0m
 
-['/usr/bin/g++', '-pthread', 'test.cpp.1.o', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_540e61053391cd4cb697e5746d5ea1e2/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', '-pthread', 'test.cpp.1.o', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_540e61053391cd4cb697e5746d5ea1e2/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 --------------------------------------------------------------------------
 Checking for header stdint.h
@@ -1279,12 +1279,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling build/.conf_check_78f27eb1cb7d718aa77ac6221c1170cb/test.cpp
+[1/2] Compiling [32mbuild/.conf_check_78f27eb1cb7d718aa77ac6221c1170cb/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_78f27eb1cb7d718aa77ac6221c1170cb/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
-[2/2] Linking build/.conf_check_78f27eb1cb7d718aa77ac6221c1170cb/testbuild/testprog
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_78f27eb1cb7d718aa77ac6221c1170cb/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
+[2/2] Linking [33mbuild/.conf_check_78f27eb1cb7d718aa77ac6221c1170cb/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_78f27eb1cb7d718aa77ac6221c1170cb/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_78f27eb1cb7d718aa77ac6221c1170cb/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 --------------------------------------------------------------------------
 Checking for header inttypes.h
@@ -1297,12 +1297,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling build/.conf_check_fc28ad0b265dbc0ea499b0019a3e29a9/test.cpp
+[1/2] Compiling [32mbuild/.conf_check_fc28ad0b265dbc0ea499b0019a3e29a9/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_fc28ad0b265dbc0ea499b0019a3e29a9/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
-[2/2] Linking build/.conf_check_fc28ad0b265dbc0ea499b0019a3e29a9/testbuild/testprog
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_fc28ad0b265dbc0ea499b0019a3e29a9/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
+[2/2] Linking [33mbuild/.conf_check_fc28ad0b265dbc0ea499b0019a3e29a9/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_fc28ad0b265dbc0ea499b0019a3e29a9/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_fc28ad0b265dbc0ea499b0019a3e29a9/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 --------------------------------------------------------------------------
 Checking for header sys/inttypes.h
@@ -1315,24 +1315,24 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling build/.conf_check_be8f82a542d6af9f438e0ae24dca5ce1/test.cpp
+[1/2] Compiling [32mbuild/.conf_check_be8f82a542d6af9f438e0ae24dca5ce1/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_be8f82a542d6af9f438e0ae24dca5ce1/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_be8f82a542d6af9f438e0ae24dca5ce1/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
 err: ../test.cpp:1:10: fatal error: sys/inttypes.h: No such file or directory
     1 | #include <sys/inttypes.h>
       |          ^~~~~~~~~~~~~~~~
 compilation terminated.
 
-from /home/omer/dr/app/source/ns-3.35/src/core: Test does not build: Traceback (most recent call last):
-  File "/home/omer/dr/app/source/ns-3.35/.waf3-2.0.21-c6c9a875365426e5928462b9b74d40b5/waflib/Configure.py", line 335, in run_build
+from /home/omer/dr/app/source/ns-3.35-with-blackhole/src/core: Test does not build: Traceback (most recent call last):
+  File "/home/omer/dr/app/source/ns-3.35-with-blackhole/.waf3-2.0.21-c6c9a875365426e5928462b9b74d40b5/waflib/Configure.py", line 335, in run_build
     bld.compile()
-  File "/home/omer/dr/app/source/ns-3.35/.waf3-2.0.21-c6c9a875365426e5928462b9b74d40b5/waflib/Build.py", line 176, in compile
+  File "/home/omer/dr/app/source/ns-3.35-with-blackhole/.waf3-2.0.21-c6c9a875365426e5928462b9b74d40b5/waflib/Build.py", line 176, in compile
     raise Errors.BuildError(self.producer.error)
 waflib.Errors.BuildError: Build failed
  -> task in 'testprog' failed with exit status 1 (run with -v to display more information)
 
 not found
-from /home/omer/dr/app/source/ns-3.35/src/core: The configuration failed
+from /home/omer/dr/app/source/ns-3.35-with-blackhole/src/core: The configuration failed
 --------------------------------------------------------------------------
 Checking for library rt
 ==>
@@ -1343,12 +1343,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling build/.conf_check_2b334598ad55df9c966dac32c87d3c5d/test.cpp
+[1/2] Compiling [32mbuild/.conf_check_2b334598ad55df9c966dac32c87d3c5d/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-pthread', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_2b334598ad55df9c966dac32c87d3c5d/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
-[2/2] Linking build/.conf_check_2b334598ad55df9c966dac32c87d3c5d/testbuild/testprog
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-pthread', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_2b334598ad55df9c966dac32c87d3c5d/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
+[2/2] Linking [33mbuild/.conf_check_2b334598ad55df9c966dac32c87d3c5d/testbuild/testprog[0m
 
-['/usr/bin/g++', '-pthread', 'test.cpp.1.o', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_2b334598ad55df9c966dac32c87d3c5d/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lrt']
+['/usr/bin/g++', '-pthread', 'test.cpp.1.o', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_2b334598ad55df9c966dac32c87d3c5d/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lrt']
 yes
 --------------------------------------------------------------------------
 Checking for header sys/ioctl.h
@@ -1361,12 +1361,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling build/.conf_check_72d93051ebaa6b5f9d463e7096461b0c/test.cpp
+[1/2] Compiling [32mbuild/.conf_check_72d93051ebaa6b5f9d463e7096461b0c/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_72d93051ebaa6b5f9d463e7096461b0c/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
-[2/2] Linking build/.conf_check_72d93051ebaa6b5f9d463e7096461b0c/testbuild/testprog
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_72d93051ebaa6b5f9d463e7096461b0c/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
+[2/2] Linking [33mbuild/.conf_check_72d93051ebaa6b5f9d463e7096461b0c/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_72d93051ebaa6b5f9d463e7096461b0c/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_72d93051ebaa6b5f9d463e7096461b0c/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 --------------------------------------------------------------------------
 Checking for header net/if.h
@@ -1379,12 +1379,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling build/.conf_check_10ae9c9b4244c33b19dacb103f33468c/test.cpp
+[1/2] Compiling [32mbuild/.conf_check_10ae9c9b4244c33b19dacb103f33468c/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_10ae9c9b4244c33b19dacb103f33468c/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
-[2/2] Linking build/.conf_check_10ae9c9b4244c33b19dacb103f33468c/testbuild/testprog
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_10ae9c9b4244c33b19dacb103f33468c/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
+[2/2] Linking [33mbuild/.conf_check_10ae9c9b4244c33b19dacb103f33468c/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_10ae9c9b4244c33b19dacb103f33468c/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_10ae9c9b4244c33b19dacb103f33468c/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 --------------------------------------------------------------------------
 Checking for header net/ethernet.h
@@ -1397,12 +1397,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling build/.conf_check_02eff9a880d4ef695f1f39407f17941c/test.cpp
+[1/2] Compiling [32mbuild/.conf_check_02eff9a880d4ef695f1f39407f17941c/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_02eff9a880d4ef695f1f39407f17941c/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
-[2/2] Linking build/.conf_check_02eff9a880d4ef695f1f39407f17941c/testbuild/testprog
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_02eff9a880d4ef695f1f39407f17941c/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
+[2/2] Linking [33mbuild/.conf_check_02eff9a880d4ef695f1f39407f17941c/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_02eff9a880d4ef695f1f39407f17941c/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_02eff9a880d4ef695f1f39407f17941c/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 --------------------------------------------------------------------------
 Checking for 'libdpdk'
@@ -1413,7 +1413,7 @@ to the PKG_CONFIG_PATH environment variable
 No package 'libdpdk' found
 
 not found
-from /home/omer/dr/app/source/ns-3.35/src/fd-net-device: The configuration failed
+from /home/omer/dr/app/source/ns-3.35-with-blackhole/src/fd-net-device: The configuration failed
 --------------------------------------------------------------------------
 Checking for header linux/if_tun.h
 ==>
@@ -1425,12 +1425,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling build/.conf_check_84bde5bf7ffe777dad5df813b93837c2/test.cpp
+[1/2] Compiling [32mbuild/.conf_check_84bde5bf7ffe777dad5df813b93837c2/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_84bde5bf7ffe777dad5df813b93837c2/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
-[2/2] Linking build/.conf_check_84bde5bf7ffe777dad5df813b93837c2/testbuild/testprog
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_84bde5bf7ffe777dad5df813b93837c2/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
+[2/2] Linking [33mbuild/.conf_check_84bde5bf7ffe777dad5df813b93837c2/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_84bde5bf7ffe777dad5df813b93837c2/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_84bde5bf7ffe777dad5df813b93837c2/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 --------------------------------------------------------------------------
 Checking for header netpacket/packet.h
@@ -1443,12 +1443,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling build/.conf_check_b65f599c2de3a80c907eb8b7100968be/test.cpp
+[1/2] Compiling [32mbuild/.conf_check_b65f599c2de3a80c907eb8b7100968be/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_IF_TUN_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_b65f599c2de3a80c907eb8b7100968be/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
-[2/2] Linking build/.conf_check_b65f599c2de3a80c907eb8b7100968be/testbuild/testprog
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_IF_TUN_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_b65f599c2de3a80c907eb8b7100968be/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
+[2/2] Linking [33mbuild/.conf_check_b65f599c2de3a80c907eb8b7100968be/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_b65f599c2de3a80c907eb8b7100968be/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_b65f599c2de3a80c907eb8b7100968be/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 --------------------------------------------------------------------------
 Checking for header net/netmap_user.h
@@ -1461,24 +1461,24 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling build/.conf_check_e9d03684062581acb00eba710bb5272f/test.cpp
+[1/2] Compiling [32mbuild/.conf_check_e9d03684062581acb00eba710bb5272f/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_IF_TUN_H=1', '-DHAVE_PACKET_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_e9d03684062581acb00eba710bb5272f/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_IF_TUN_H=1', '-DHAVE_PACKET_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_e9d03684062581acb00eba710bb5272f/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
 err: ../test.cpp:1:10: fatal error: net/netmap_user.h: No such file or directory
     1 | #include <net/netmap_user.h>
       |          ^~~~~~~~~~~~~~~~~~~
 compilation terminated.
 
-from /home/omer/dr/app/source/ns-3.35/src/fd-net-device: Test does not build: Traceback (most recent call last):
-  File "/home/omer/dr/app/source/ns-3.35/.waf3-2.0.21-c6c9a875365426e5928462b9b74d40b5/waflib/Configure.py", line 335, in run_build
+from /home/omer/dr/app/source/ns-3.35-with-blackhole/src/fd-net-device: Test does not build: Traceback (most recent call last):
+  File "/home/omer/dr/app/source/ns-3.35-with-blackhole/.waf3-2.0.21-c6c9a875365426e5928462b9b74d40b5/waflib/Configure.py", line 335, in run_build
     bld.compile()
-  File "/home/omer/dr/app/source/ns-3.35/.waf3-2.0.21-c6c9a875365426e5928462b9b74d40b5/waflib/Build.py", line 176, in compile
+  File "/home/omer/dr/app/source/ns-3.35-with-blackhole/.waf3-2.0.21-c6c9a875365426e5928462b9b74d40b5/waflib/Build.py", line 176, in compile
     raise Errors.BuildError(self.producer.error)
 waflib.Errors.BuildError: Build failed
  -> task in 'testprog' failed with exit status 1 (run with -v to display more information)
 
 not found
-from /home/omer/dr/app/source/ns-3.35/src/fd-net-device: The configuration failed
+from /home/omer/dr/app/source/ns-3.35-with-blackhole/src/fd-net-device: The configuration failed
 --------------------------------------------------------------------------
 Checking for NSC location
 not found
@@ -1502,12 +1502,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling build/.conf_check_c37efbb515ef25356eb075829fe2daf9/test.cpp
+[1/2] Compiling [32mbuild/.conf_check_c37efbb515ef25356eb075829fe2daf9/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_IF_TUN_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_SQLITE3=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_c37efbb515ef25356eb075829fe2daf9/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
-[2/2] Linking build/.conf_check_c37efbb515ef25356eb075829fe2daf9/testbuild/testprog
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_IF_TUN_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_SQLITE3=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_c37efbb515ef25356eb075829fe2daf9/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
+[2/2] Linking [33mbuild/.conf_check_c37efbb515ef25356eb075829fe2daf9/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_c37efbb515ef25356eb075829fe2daf9/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_c37efbb515ef25356eb075829fe2daf9/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 --------------------------------------------------------------------------
 Checking for header linux/if_tun.h
@@ -1520,12 +1520,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling build/.conf_check_84bde5bf7ffe777dad5df813b93837c2/test.cpp
+[1/2] Compiling [32mbuild/.conf_check_84bde5bf7ffe777dad5df813b93837c2/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_SQLITE3=1', '-DHAVE_SEMAPHORE_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_84bde5bf7ffe777dad5df813b93837c2/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
-[2/2] Linking build/.conf_check_84bde5bf7ffe777dad5df813b93837c2/testbuild/testprog
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_SQLITE3=1', '-DHAVE_SEMAPHORE_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_84bde5bf7ffe777dad5df813b93837c2/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
+[2/2] Linking [33mbuild/.conf_check_84bde5bf7ffe777dad5df813b93837c2/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_84bde5bf7ffe777dad5df813b93837c2/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_84bde5bf7ffe777dad5df813b93837c2/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 --------------------------------------------------------------------------
 Checking for python module 'gi'
@@ -1586,11 +1586,11 @@ ok
 --------------------------------------------------------------------------
 Checking for program 'sudo'
 /usr/bin/sudo
-find program=['sudo'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/home/omer/Cypress/arm-2013.11/bin', '/home/omer/dr/app/bake', '/home/omer/dr/app/build/bin'] var='SUDO' -> ['/usr/bin/sudo']
+find program=['sudo'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/home/omer/dr/app/bake', '/home/omer/Cypress/arm-2013.11/bin'] var='SUDO' -> ['/usr/bin/sudo']
 --------------------------------------------------------------------------
 Checking for program 'valgrind'
 /usr/bin/valgrind
-find program=['valgrind'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/home/omer/Cypress/arm-2013.11/bin', '/home/omer/dr/app/bake', '/home/omer/dr/app/build/bin'] var='VALGRIND' -> ['/usr/bin/valgrind']
+find program=['valgrind'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/home/omer/dr/app/bake', '/home/omer/Cypress/arm-2013.11/bin'] var='VALGRIND' -> ['/usr/bin/valgrind']
 --------------------------------------------------------------------------
 Checking for 'gsl'
 ['/usr/bin/pkg-config', '--cflags', '--libs', 'gsl']
@@ -1600,49 +1600,49 @@ to the PKG_CONFIG_PATH environment variable
 No package 'gsl' found
 
 not found
-from /home/omer/dr/app/source/ns-3.35: The configuration failed
+from /home/omer/dr/app/source/ns-3.35-with-blackhole: The configuration failed
 --------------------------------------------------------------------------
 libgcrypt-config
 not found
-find program=['libgcrypt-config'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/home/omer/Cypress/arm-2013.11/bin', '/home/omer/dr/app/bake', '/home/omer/dr/app/build/bin'] var='LIBGCRYPT_CONFIG' -> None
-from /home/omer/dr/app/source/ns-3.35: Could not find the program ['libgcrypt-config']
+find program=['libgcrypt-config'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/home/omer/dr/app/bake', '/home/omer/Cypress/arm-2013.11/bin'] var='LIBGCRYPT_CONFIG' -> None
+from /home/omer/dr/app/source/ns-3.35-with-blackhole: Could not find the program ['libgcrypt-config']
 --------------------------------------------------------------------------
 Checking for compilation flag -fstrict-aliasing support
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling build/.conf_check_040c0dd0eda912b8b29d7d1ce92ad6d6/test.cpp
+[1/1] Compiling [32mbuild/.conf_check_040c0dd0eda912b8b29d7d1ce92ad6d6/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-fstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_SQLITE3=1', '-DHAVE_SEMAPHORE_H=1', '-DHAVE_IF_TUN_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_040c0dd0eda912b8b29d7d1ce92ad6d6/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-fstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_SQLITE3=1', '-DHAVE_SEMAPHORE_H=1', '-DHAVE_IF_TUN_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_040c0dd0eda912b8b29d7d1ce92ad6d6/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
 ok
 --------------------------------------------------------------------------
 Checking for compilation flag -fstrict-aliasing support
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling build/.conf_check_bbeb304d122cb8cef475215642c54663/test.c
+[1/1] Compiling [32mbuild/.conf_check_bbeb304d122cb8cef475215642c54663/test.c[0m
 
-['/usr/bin/gcc', '-fstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_SQLITE3=1', '-DHAVE_SEMAPHORE_H=1', '-DHAVE_IF_TUN_H=1', '../test.c', '-c', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_bbeb304d122cb8cef475215642c54663/testbuild/test.c.1.o', '-DHAVE_BOOST']
+['/usr/bin/gcc', '-fstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_SQLITE3=1', '-DHAVE_SEMAPHORE_H=1', '-DHAVE_IF_TUN_H=1', '../test.c', '-c', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_bbeb304d122cb8cef475215642c54663/testbuild/test.c.1.o', '-DHAVE_BOOST']
 ok
 --------------------------------------------------------------------------
 Checking for compilation flag -Wstrict-aliasing support
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling build/.conf_check_040c0dd0eda912b8b29d7d1ce92ad6d6/test.cpp
+[1/1] Compiling [32mbuild/.conf_check_040c0dd0eda912b8b29d7d1ce92ad6d6/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-fstrict-aliasing', '-Wstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_SQLITE3=1', '-DHAVE_SEMAPHORE_H=1', '-DHAVE_IF_TUN_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_040c0dd0eda912b8b29d7d1ce92ad6d6/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++17', '-Wno-parentheses', '-fstrict-aliasing', '-Wstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_SQLITE3=1', '-DHAVE_SEMAPHORE_H=1', '-DHAVE_IF_TUN_H=1', '../test.cpp', '-c', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_040c0dd0eda912b8b29d7d1ce92ad6d6/testbuild/test.cpp.1.o', '-DHAVE_BOOST']
 ok
 --------------------------------------------------------------------------
 Checking for compilation flag -Wstrict-aliasing support
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling build/.conf_check_bbeb304d122cb8cef475215642c54663/test.c
+[1/1] Compiling [32mbuild/.conf_check_bbeb304d122cb8cef475215642c54663/test.c[0m
 
-['/usr/bin/gcc', '-Wstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_SQLITE3=1', '-DHAVE_SEMAPHORE_H=1', '-DHAVE_IF_TUN_H=1', '../test.c', '-c', '-o/home/omer/dr/app/source/ns-3.35/build/.conf_check_bbeb304d122cb8cef475215642c54663/testbuild/test.c.1.o', '-DHAVE_BOOST']
+['/usr/bin/gcc', '-Wstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_SQLITE3=1', '-DHAVE_SEMAPHORE_H=1', '-DHAVE_IF_TUN_H=1', '../test.c', '-c', '-o/home/omer/dr/app/source/ns-3.35-with-blackhole/build/.conf_check_bbeb304d122cb8cef475215642c54663/testbuild/test.c.1.o', '-DHAVE_BOOST']
 ok
 --------------------------------------------------------------------------
 Checking for program 'doxygen'
 /usr/bin/doxygen
-find program=['doxygen'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/home/omer/Cypress/arm-2013.11/bin', '/home/omer/dr/app/bake', '/home/omer/dr/app/build/bin'] var='DOXYGEN' -> ['/usr/bin/doxygen']
+find program=['doxygen'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/home/omer/dr/app/bake', '/home/omer/Cypress/arm-2013.11/bin'] var='DOXYGEN' -> ['/usr/bin/doxygen']
