@@ -171,6 +171,15 @@ public:
     return m_enableBroadcast;
   }
 
+  void SetMaliciousEnable (bool f)
+  {
+    IsMalicious = f;
+  }
+  bool GetMaliciousEnable () const
+  {
+    return IsMalicious;
+  }
+
   /**
    * Assign a fixed random variable stream number to the random variables
    * used by this model.  Return the number of streams (possibly zero) that
@@ -259,6 +268,8 @@ private:
   /// Number of RERRs used for RERR rate control
   uint16_t m_rerrCount;
 
+  bool IsMalicious;
+
 private:
   /// Start protocol operation
   void Start ();
@@ -269,7 +280,7 @@ private:
    * \param header the IP header
    * \param ucb the UnicastForwardCallback function
    * \param ecb the ErrorCallback function
-   */ 
+   */
   void DeferredRouteOutput (Ptr<const Packet> p, const Ipv4Header & header, UnicastForwardCallback ucb, ErrorCallback ecb);
   /**
    * If route exists and is valid, forward packet.
@@ -279,7 +290,7 @@ private:
    * \param ucb the UnicastForwardCallback function
    * \param ecb the ErrorCallback function
    * \returns true if forwarded
-   */ 
+   */
   bool Forwarding (Ptr<const Packet> p, const Ipv4Header & header, UnicastForwardCallback ucb, ErrorCallback ecb);
   /**
    * Repeated attempts by a source node at route discovery for a single destination
@@ -322,7 +333,7 @@ private:
   Ptr<Socket> FindSubnetBroadcastSocketWithInterfaceAddress (Ipv4InterfaceAddress iface) const;
   /**
    * Process hello message
-   * 
+   *
    * \param rrepHeader RREP message header
    * \param receiverIfaceAddr receiver interface IP address
    */
