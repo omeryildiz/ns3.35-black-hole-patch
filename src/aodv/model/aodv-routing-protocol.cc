@@ -604,7 +604,7 @@ RoutingProtocol::Forwarding (Ptr<const Packet> p, const Ipv4Header & header,
   RoutingTableEntry toDst;
   if(IsMalicious)
           {//When malicious node receives packet it drops the packet.
-                std :: cout <<"Launching Blackhole Attack! Packet dropped . . . \n";
+                std::cout <<"Blackhole Attack is launching. Unfortunately, packet dropped ..." << std::endl;;
                return false;
           }
   if (m_routingTable.LookupRoute (dst, toDst))

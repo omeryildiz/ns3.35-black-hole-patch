@@ -2740,8 +2740,8 @@
     "file": "../src/aodv/model/aodv-neighbor.cc"
   },
   {
-    "directory": "/home/omer/dr/app/source/ns-3.35/build",
-    "command": "/usr/bin/g++ -O0 -ggdb -g3 -Wall -Werror -std=c++17 -Wno-parentheses -fstrict-aliasing -Wstrict-aliasing -fPIC -pthread -Isrc/aodv -I../src/aodv -I. -I/usr/include -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_PACKET_H=1 -DHAVE_SQLITE3=1 -DHAVE_SEMAPHORE_H=1 -DHAVE_IF_TUN_H=1 -DNS3_ENABLE_EXAMPLES ../src/aodv/model/aodv-routing-protocol.cc -c -o/home/omer/dr/app/source/ns-3.35/build/src/aodv/model/aodv-routing-protocol.cc.1.o -DHAVE_BOOST",
+    "directory": "/home/omer/dr/app/source/ns3.35-black-hole-patch/build",
+    "command": "/usr/bin/g++ -O0 -ggdb -g3 -Wall -Werror -std=c++17 -Wno-parentheses -fstrict-aliasing -Wstrict-aliasing -fPIC -pthread -Isrc/aodv -I../src/aodv -I. -I/usr/include -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_PACKET_H=1 -DHAVE_SQLITE3=1 -DHAVE_SEMAPHORE_H=1 -DHAVE_IF_TUN_H=1 ../src/aodv/model/aodv-routing-protocol.cc -c -o/home/omer/dr/app/source/ns3.35-black-hole-patch/build/src/aodv/model/aodv-routing-protocol.cc.1.o -DHAVE_BOOST",
     "file": "../src/aodv/model/aodv-routing-protocol.cc"
   },
   {
@@ -7828,5 +7828,10 @@
     "directory": "/home/omer/dr/app/source/ns3.35-black-hole-patch/build",
     "command": "/usr/bin/g++ -O0 -ggdb -g3 -Wall -Werror -std=c++17 -Wno-parentheses -fstrict-aliasing -Wstrict-aliasing -pthread -pthread -I. -I/usr/include -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/usr/include/gio-unix-2.0 -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/fribidi -I/usr/include/harfbuzz -I/usr/include/atk-1.0 -I/usr/include/pixman-1 -I/usr/include/uuid -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_PACKET_H=1 -DHAVE_SQLITE3=1 -DHAVE_SEMAPHORE_H=1 -DHAVE_IF_TUN_H=1 ../scratch/aodv-routing-with-mal.cc -c -o/home/omer/dr/app/source/ns3.35-black-hole-patch/build/scratch/aodv-routing-with-mal.cc.1.o -DHAVE_BOOST",
     "file": "../scratch/aodv-routing-with-mal.cc"
+  },
+  {
+    "directory": "/home/omer/dr/app/source/ns3.35-black-hole-patch/build",
+    "command": "/usr/bin/g++ -O0 -ggdb -g3 -Wall -Werror -std=c++17 -Wno-parentheses -fstrict-aliasing -Wstrict-aliasing -pthread -pthread -I. -I/usr/include -I/usr/include/gtk-3.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include -I/usr/include/gio-unix-2.0 -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/fribidi -I/usr/include/harfbuzz -I/usr/include/atk-1.0 -I/usr/include/pixman-1 -I/usr/include/uuid -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/libxml2 -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_PACKET_H=1 -DHAVE_SQLITE3=1 -DHAVE_SEMAPHORE_H=1 -DHAVE_IF_TUN_H=1 ../scratch/blackholel.cc -c -o/home/omer/dr/app/source/ns3.35-black-hole-patch/build/scratch/blackholel.cc.5.o -DHAVE_BOOST",
+    "file": "../scratch/blackholel.cc"
   }
 ]

@@ -33,3 +33,10 @@
 
 # logs
 *.log
+
+*.routes
+*.flowmon
+
+*.xml
+*.csv
+*.mob
